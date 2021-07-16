@@ -3,39 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Cat Energy - Подбор программы</title>
-  <meta name="description" content="New desc">
-  <meta name="keywords" content="new, tags">
+  <meta name="description" content="Подбор программы">
+  <meta name="keywords" content="lostsleepyboii, cat energy, form">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#68b738">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="header  header--single">
-  <div class="container">
-    <div class="header__inner">
-      <a href="index.html">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg" width="33" height="37">
-          <source media="(max-width: 1100px)" srcset="img/logo-tablet.svg" width="174" height="51">
-          <img class="header__logo" src="img/logo.svg" alt="Cat Energy Logo" width="202" height="59">
-        </picture>
-      </a>
-      <img src="img/logo-mobile-title.svg" alt="Cat Energy" class="header__logo-title" width="101" height="18">
-      <button class="header__burger burger" aria-label="Меню">
-        <span></span>
-      </button>
-      <nav class="header__nav nav">
-        <a href="index.html" class="nav__link  active">Главная</a>
-        <a href="catalog.html" class="nav__link">Каталог продукции</a>
-        <a href="form.html" class="nav__link">Подбор программы</a>
-      </nav>
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <source media="(max-width: 1100px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo" src="img/logo.svg" alt="Cat Energy Logo" width="202" height="59">
+          </picture>
+        </a>
+        <img src="img/logo-mobile-title.svg" alt="Cat Energy" class="header__logo-title" width="101" height="18">
+        <button class="header__burger burger" aria-label="Меню">
+          <span></span>
+        </button>
+        <nav class="header__nav nav">
+          <a href="index.html" class="nav__link  active">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог продукции</a>
+          <a href="form.html" class="nav__link  active">Подбор программы</a>
+        </nav>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <main class="main">
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
@@ -85,7 +91,7 @@
       <fieldset class="form-contact">
         <div class="container">
           <div class="form-contact__inner">
-            <legend class="form-contact__title  _form-legend">Контактные данные (владельца кота)</legend>
+            <h2 class="form-contact__title  _form-title">Контактные данные (владельца кота)</h2>
             <ul class="form-contact__list">
               <li class="form-contact__item  form-input  form-input--email">
                 <label for="yourEmail" class="form-input__label">E-mail:*</label>
@@ -103,7 +109,7 @@
       <fieldset class="form-text">
         <div class="container">
           <div class="form-text__inner">
-            <legend class="form-text__title  _form-legend">Комментарий</legend>
+            <h2 class="form-text__title  _form-title">Комментарий</h2>
             <textarea class="form-text__area" name="yourComment" id="yourComment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
@@ -112,7 +118,7 @@
       <fieldset class="form-additions">
         <div class="container">
           <div class="form-additions__inner">
-            <legend class="form-additions__title  _form-legend">Дополнительно</legend>
+            <h2 class="form-additions__title  _form-title">Дополнительно</h2>
             <ul class="form-additions__list">
               <li><label class="form-additions__item  form-checkbox">
                 <input class="form-checkbox__field" id="addChoice1" value="sweetener" name="addChoice" type="checkbox" checked>
@@ -143,7 +149,7 @@
         <div class="container">
           <div class="form-final__inner">
             <button class="form-final__btn  _btn" type="submit"><span>отправить заявку</span></button>
-            <legend class="form-final__legend">* — Обязательные поля</legend>
+            <span class="form-final__legend">* — Обязательные поля</span>
           </div>
         </div>
       </fieldset>
