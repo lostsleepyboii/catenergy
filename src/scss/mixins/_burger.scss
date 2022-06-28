@@ -1,0 +1,57 @@
+@mixin burger {
+  display: none;
+
+  @include sm-tablet {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    
+    &.active {
+      &::before {
+        top: 9px;
+        transform: rotate(45deg);
+      }
+  
+      &::after {
+        bottom: 9px;
+        transform: rotate(-45deg);
+      }
+  
+      span {
+        transform: scale(0);
+      }
+    }
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transition: all 0.2s ease;
+    }
+  
+    &::before {
+      top: 0;
+    }
+  
+    &::after {
+      bottom: 0;
+    }
+    
+    span {
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transition: all 0.2s ease;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.form-final {
+  &__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include sm-tablet {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  &__legend {
+    margin-left: 8rem;
+    color: var(--color-black);
+    font-size: var(--font-primary);
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+
+    @include sm-tablet {
+      margin-top: 2rem;
+      margin-left: 0;
+      font-size: var(--font-xs);
+      line-height: 1.1;
+    }
+  }
+
+  &__btn {
+    max-width: 568px;
+    width: 100%;
+
+    @include sm-tablet {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.catalog {
+  padding-top: 18rem;
+  overflow: hidden;
+
+  &__inner {
+    display: grid;
+    gap: 8rem;
+
+    @include sm-tablet {
+      gap: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    align-items: end;
+    gap: 8rem;
+
+    @include sm-tablet {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+
+  &__title {
+    @include sm-tablet {
+      padding-bottom: 4rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        bottom: 0;
+        width: 120%;
+        height: 1px;
+        background-color: var(--color-gray-250);
+      }
+    }
+  }
+
+  @include tablet {
+    padding-top: 14rem;
+  }
+
+  @include sm-tablet {
+    padding-top: 9.5rem;
+  }
+}

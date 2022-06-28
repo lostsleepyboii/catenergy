@@ -1,0 +1,136 @@
+.services-item {
+  padding: 5rem;
+  display: flex;
+  background-color: var(--color-gray-100);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    
+    @include sm-tablet {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 6rem;
+
+    &--right {
+      display: none;
+    }
+
+    @include tablet {
+      margin-right: 0;
+
+      &--header {
+        display: none;
+      }
+      
+      &--right {
+        margin-left: 1.5rem;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @include sm-tablet {
+      margin-right: 2rem;
+
+      &--right {
+        display: none;
+      }
+
+      &--header {
+        display: block;
+      }
+
+      &--1 {
+        width: 50px;
+        height: 53px;
+      }
+  
+      &--2 {
+        width: 67px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__title {
+    color: var(--color-black);
+    font-family: var(--ff-title);
+    font-size: var(--font-l);
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include sm-tablet {
+      font-size: var(--font-xm);
+      line-height: 1.5;
+    }
+  }
+
+  &__main {
+    margin-bottom: 2.3rem;
+    display: flex;
+  }
+
+  &__desc {
+    color: var(--color-black);
+    font-family: inherit;
+    font-size: var(--font-primary);
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include sm-tablet {
+      font-size: var(--font-xs);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+
+    @include sm-tablet {
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-gray-300);
+    }
+  }
+
+  &__link {
+    padding-right: 5.5rem;
+    position: relative;
+    color: var(--color-black);
+    font-family: var(--ff-title);
+    font-size: var(--font-s);
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    background-image: url('../img/link-arrow-small.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: opacity 0.2s ease;
+
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      background-image: url('../img/link-arrow.svg');
+    }
+    
+    @include sm-tablet {
+      font-size: var(--font-primary);
+    }
+  }
+
+  @include sm-tablet {
+    padding: 2rem;
+  }
+}

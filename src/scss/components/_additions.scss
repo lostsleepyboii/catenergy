@@ -1,0 +1,65 @@
+.additions {
+  margin-top: 7.5rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-accent);
+
+    @include sm-tablet {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    padding: 0 4rem;
+    position: relative;
+    left: -4rem;
+    z-index: var(--zd1);
+    display: inline-block;
+    color: var(--color-black);
+    font-family: var(--ff-title);
+    font-size: var(--font-l);
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--color-white);
+
+    @include tablet {
+      left: 0;
+    }
+
+    @include sm-tablet {
+      padding-right: 2rem;
+      padding-left: 0;
+      font-size: var(--font-xm);
+      line-height: 1.5;
+    }
+  }
+
+  &__inner {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 8rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 7rem;
+    }
+
+    @include sm-tablet {
+      margin-top: 3.5rem;
+      gap: 4rem;
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

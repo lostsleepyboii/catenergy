@@ -1,0 +1,211 @@
+.demo {
+  padding: 7rem 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% - 25rem);
+    background-color: var(--color-gray-100);
+
+    @include tablet {
+      height: 462px;
+    }
+
+    @include sm-tablet {
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include tablet {
+      padding: 3rem 0;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 14rem;
+
+    @include tablet {
+      margin-bottom: 6rem;
+    }
+    
+    @include sm-tablet {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 436px;
+    width: 100%;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 7rem;
+    color: var(--color-primary);
+    font-size: var(--font-primary);
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include tablet {
+      margin-bottom: 5rem;
+    }
+
+    @include sm-tablet {
+      margin-bottom: 2.5rem;
+      font-size: var(--font-xs);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include sm-tablet {
+      flex-direction: column;
+    }
+  }
+
+  @include tablet {
+    padding-top: 4.5rem;
+    border-top: 1px solid var(--color-gray-250);
+  }
+
+  @include sm-tablet {
+    padding-top: 3rem;
+    background-color: var(--color-gray-100);
+    border-top: none;
+  }
+}
+
+.demo-stats {
+  margin-bottom: 5rem;
+  display: flex;
+
+  &__item {
+    padding: 1.5rem 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 162px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 5px;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    @include sm-tablet {
+      width: 124px;
+    }
+  }
+
+  &__value {
+    color: var(--color-black);
+    font-family: var(--ff-title);
+    font-size: var(--font-m);
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include sm-tablet {
+      font-size: var(--font-xm);
+      line-height: 1;
+    }
+  }
+
+  &__name {
+    padding: 0 0.8rem;
+    position: absolute;
+    bottom: -0.7rem;
+    z-index: var(--zd1);
+    color: var(--color-primary);
+    font-size: var(--font-xs);
+    font-weight: 400;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: var(--color-gray-100);
+
+    @include tablet {
+      background-color: var(--color-white);
+    }
+
+    @include sm-tablet {
+      bottom: -1.8rem;
+      width: 80%;
+      font-size: var(--font-xxs);
+      background-color: var(--color-gray-100);
+    }
+  }
+
+  @include tablet {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  @include sm-tablet {
+    margin-right: 0;
+    margin-bottom: 4rem;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.demo-price {
+  color: var(--color-black);
+  font-family: var(--ff-title);
+  font-size: var(--font-s);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &__value {
+    margin-left: 6rem;
+
+    @include tablet {
+      margin-top: 1rem;
+      margin-left: 0;
+      text-align: right;
+    }
+
+    @include sm-tablet {
+      margin-top: 0;
+    }
+  }
+  
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include sm-tablet {
+    flex-direction: row;
+    font-size: var(--font-xs);
+    line-height: 1.4;
+  }
+}

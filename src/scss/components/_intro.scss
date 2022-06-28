@@ -1,0 +1,102 @@
+.intro {
+  background: linear-gradient(90deg, var(--color-white) 0%, var(--color-accent) 0%);
+  background-image: image-set('../img/intro-img.jpg' 1x, '../img/intro-img@2x.jpg' 2x);
+  background-position: top right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  &__inner {
+    padding: 14rem 0 5rem 8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    @include sm-tablet {
+      padding: 3rem 0 0;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 420px;
+    width: 100%;
+
+    @include sm-tablet {
+      align-items: center;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+
+    @include sm-tablet {
+      margin-bottom: 2.5rem;
+      color: var(--color-white);
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 5rem;
+    color: var(--color-black);
+    font-family: var(--ff-title);
+    font-size: var(--font-s);
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include sm-tablet {
+      margin-bottom: 3rem;
+      color: var(--color-white);
+      font-size: var(--font-xs);
+      text-align: center;
+    }
+  }
+
+  // &__btn {
+  // }
+
+  &__img {
+    margin-left: -4rem;
+
+    &--content {
+      display: none;
+    }
+
+    @include tablet {
+      &--inner {
+        display: none;
+      }
+    }
+
+    @include sm-tablet {
+      margin-left: 0;
+
+      &--content {
+        display: flex;
+      }
+    }
+  }
+
+  @include tablet {
+    height: 950px;
+    background-image: image-set("../img/intro-can.png" 1x, "../img/intro-can@2x.png" 2x);
+    background-position: bottom right;
+    background-size: 709px 609px;
+    background-color: var(--color-white);
+  }
+
+  @include sm-tablet {
+    margin-top: 7rem;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-white) 0%, var(--color-accent) 0%) no-repeat;
+    background-image: image-set("../img/intro-img.jpg" 1x, "../img/intro-img@2x.jpg" 2x);
+    background-position: top;
+    background-size: 100% 65%;
+  }
+}

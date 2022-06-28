@@ -1,0 +1,53 @@
+// Брейкоинты
+$bp1: 1200px;  // desktop
+$bp2: 1100px;   // tablet
+$bp3: 767px;   // small tablet
+$bp4: 576px;   // mobile
+$bp5: 420px;   // small mobile
+
+:root {
+  // основные цвета
+  --color-primary: #444;
+  --color-accent: #68b738;
+  --color-bg: #fff;
+
+  // остальные цвета
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-100: #f2f2f2;
+  --color-gray-180: #eaeaea;
+  --color-gray-200: #ebebeb;
+  --color-gray-250: #e6e6e6;
+  --color-gray-300: #cdcdcd;
+  --color-gray-350: #dcdcdc;
+  --color-gray-380: #bababa;
+  --color-gray-400: #666;
+  --color-darkgray-100: #444;
+  --color-darkgray-200: #222;
+  --color-red: #ff8282;
+  --color-green: #5eaa2f;
+
+  // размеры шрифтов
+  --font-primary: 1.6rem;
+
+  --font-xxs: 1.2rem;
+  --font-xs: 1.4rem;
+  --font-s: 2rem;
+  --font-xm: 2.4rem;
+  --font-m: 3rem;
+  --font-l: 3.6rem;
+  --font-xl: 6rem;
+
+  // семейство шрифтов
+  --ff-primary: "Arial", sans-serif;
+  --ff-title: "Oswald", sans-serif;
+
+  // размеры и брейкпоинты
+  --container: 1220px;
+
+  // z-index
+  --zd1: 1;
+  --zd2: 2;
+  --zd3: 3;
+  --zd4: 4;
+}

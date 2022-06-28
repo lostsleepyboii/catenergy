@@ -1,0 +1,31 @@
+// Главное
+@import "vendor";
+@import "mixins";
+@import "global";
+
+// Блоки сайта
+@import "./components/header";
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/intro";
+@import "./components/services";
+@import "./components/services-item";
+@import "./components/advges";
+@import "./components/demo";
+@import "./components/demo-slider";
+@import "./components/map";
+@import "./components/footer";
+@import "./components/catalog";
+@import "./components/catalog-item";
+@import "./components/catalog-plus";
+@import "./components/additions";
+@import "./components/additions-item";
+@import "./components/gift";
+@import "./components/form";
+@import "./components/form-input";
+@import "./components/form-radio";
+@import "./components/form-checkbox";
+@import "./components/form-contact";
+@import "./components/form-text";
+@import "./components/form-additions";
+@import "./components/form-final";
